@@ -3,29 +3,20 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
-/// <summary>
-/// The HUD
-/// </summary>
 public class HUD : MonoBehaviour
 {
     [SerializeField]
     TextMeshProUGUI scoreText;
 
-    // game timer support
+
     float elapsedSeconds = 0;
     bool running = true;
 
-    /// <summary>
-    /// Start is called before the first frame update
-    /// </summary>
     void Start()
 	{
         scoreText.text = "0";
 	}
 	
-	/// <summary>
-	/// Update is called once per frame
-	/// </summary>
 	void Update()
 	{
         if (running)
@@ -35,9 +26,6 @@ public class HUD : MonoBehaviour
         }
 	}
 
-    /// <summary>
-    ///  Stops the game timer
-    /// </summary>
     public void StopGameTimer()
     {
         running = false;
