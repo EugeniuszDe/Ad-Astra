@@ -2,9 +2,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-/// <summary>
-/// A bullet
-/// </summary>
 public class Bullet : MonoBehaviour
 {
     // death support
@@ -22,9 +19,6 @@ public class Bullet : MonoBehaviour
         deathTimer.Run();
 	}
 	
-	/// <summary>
-	/// Update is called once per frame
-	/// </summary>
 	void Update()
 	{
 		// kill bullet when timer is done
@@ -34,10 +28,7 @@ public class Bullet : MonoBehaviour
         }
 	}
 
-    /// <summary>
-    /// Applies a force to the bullet in the given direction
-    /// </summary>
-    /// <param name="forceDirection">force direction</param>
+    // <param name="forceDirection">force direction</param>
     public void ApplyForce(Vector2 forceDirection)
     {
         const float forceMagnitude = 10;
