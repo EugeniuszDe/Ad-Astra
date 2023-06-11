@@ -7,9 +7,6 @@ using UnityEngine;
 /// </summary>
 public class GameAudioSource : MonoBehaviour
 {
-	/// <summary>
-	/// Awake is called before Start
-	/// </summary>
 	void Awake()
     {
         // initialize audio manager
