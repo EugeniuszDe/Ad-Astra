@@ -2,9 +2,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-/// <summary>
-/// A timer
-/// </summary>
 public class Timer : MonoBehaviour {
 	
 	#region Fields
@@ -23,10 +20,6 @@ public class Timer : MonoBehaviour {
 	
 	#region Properties
 	
-	/// <summary>
-	/// Sets the duration of the timer
-	/// The duration can only be set if the timer isn't currently running
-	/// </summary>
 	/// <value>duration</value>
 	public float Duration {
 		set {
@@ -36,18 +29,11 @@ public class Timer : MonoBehaviour {
 		}
 	}
 	
-	/// <summary>
-	/// Gets whether or not the timer has finished running
-	/// This property returns false if the timer has never been started
-	/// </summary>
 	/// <value>true if finished; otherwise, false.</value>
 	public bool Finished {
 		get { return started && !running; } 
 	}
 	
-	/// <summary>
-	/// Gets whether or not the timer is currently running
-	/// </summary>
 	/// <value>true if running; otherwise, false.</value>
 	public bool Running {
 		get { return running; }
@@ -69,16 +55,8 @@ public class Timer : MonoBehaviour {
 		}
 	}
 	
-	/// <summary>
-	/// Runs the timer
-	/// Because a timer of 0 duration doesn't really make sense,
-	/// the timer only runs if the total seconds is larger than 0
-	/// This also makes sure the consumer of the class has actually 
-	/// set the duration to something higher than 0
-	/// </summary>
 	public void Run () {
 		
-		// only run with valid duration
 		if (totalSeconds > 0) {
 			started = true;
 			running = true;
