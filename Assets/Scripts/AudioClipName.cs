@@ -1,4 +1,4 @@
-public enum AudioClipName
+public enum AudioClipNameEnum
 {
     AsteroidHit,
     PlayerDeath,
