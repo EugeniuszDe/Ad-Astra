@@ -2,9 +2,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-/// <summary>
-/// Provides screen utilities
-/// </summary>
 public static class ScreenUtils
 {
     #region Fields
@@ -23,10 +20,6 @@ public static class ScreenUtils
 
     #region Properties
 
-    /// <summary>
-    /// Gets the left edge of the screen in world coordinates
-    /// </summary>
-    /// <value>left edge of the screen</value>
     public static float ScreenLeft
     {
         get
@@ -36,10 +29,6 @@ public static class ScreenUtils
         }
     }
 
-    /// <summary>
-    /// Gets the right edge of the screen in world coordinates
-    /// </summary>
-    /// <value>right edge of the screen</value>
     public static float ScreenRight
     {
         get
@@ -49,10 +38,6 @@ public static class ScreenUtils
         }
     }
 
-    /// <summary>
-    /// Gets the top edge of the screen in world coordinates
-    /// </summary>
-    /// <value>top edge of the screen</value>
     public static float ScreenTop
     {
         get
@@ -62,10 +47,6 @@ public static class ScreenUtils
         }
     }
 
-    /// <summary>
-    /// Gets the bottom edge of the screen in world coordinates
-    /// </summary>
-    /// <value>bottom edge of the screen</value>
     public static float ScreenBottom
     {
         get 
@@ -78,10 +59,7 @@ public static class ScreenUtils
     #endregion
 
     #region Methods
-
-    /// <summary>
-    /// Initializes the screen utilities
-    /// </summary>
+        
     public static void Initialize()
     {
         // save to support resolution changes
